@@ -73,4 +73,10 @@ Completing the practice tasks in this project will enable you to:
 
 Through these exercises, you will gain a deeper understanding and application ability of SCSS, significantly improving efficiency and code quality in future project development.
 
+
+Find Demo in [Codepen](https://codepen.io/K-SY/pen/LEPmKMY).
+
+
 Happy learning!
+
+

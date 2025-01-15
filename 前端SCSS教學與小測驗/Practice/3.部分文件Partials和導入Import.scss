@@ -1,0 +1,36 @@
+// _base.scss
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+// _header.scss
+header {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+
+
+// _footer.scss
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+
+
+// main.scss
+// 導入部分文件
+@import 'base';
+@import 'header';
+@import 'footer';
+
+
+

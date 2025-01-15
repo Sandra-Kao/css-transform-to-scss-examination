@@ -1,0 +1,13 @@
+/* 說明：使用繼承來重用樣式，並使用運算調整間距。 */
+.card {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.large-card {
+    padding: 30px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}

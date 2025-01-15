@@ -1,0 +1,17 @@
+// 變數定義
+$primary-color: #3498db;
+$footer-bg-color: #333;
+$text-color-light: #fff;
+$padding: 20px;
+
+.header {
+    background-color: $primary-color;
+    color: $text-color-light;
+    padding: $padding;
+}
+
+.footer {
+    background-color: $footer-bg-color;
+    color: $text-color-light;
+    padding: $padding;
+}

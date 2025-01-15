@@ -1,0 +1,12 @@
+/* 說明：使用繼承來重用樣式，並使用運算調整間距。 */
+.box {
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 10px;
+}
+
+.large-box {
+    border: 1px solid #333;
+    padding: 30px;
+    margin: 20px;
+}

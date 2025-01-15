@@ -1,0 +1,20 @@
+/* 說明：將 CSS 拆分為部分文件，並在主 SCSS 文件中導入這些部分文件。 */
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}

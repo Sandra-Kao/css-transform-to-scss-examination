@@ -1,0 +1,19 @@
+/* 說明：使用嵌套規則將 CSS 結構優化。 */
+nav {
+    background-color: #3498db;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}

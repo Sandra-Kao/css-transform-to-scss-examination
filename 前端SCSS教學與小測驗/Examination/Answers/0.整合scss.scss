@@ -1,0 +1,228 @@
+// 顏色變數定義
+$color-primary: #3498db;
+$color-footer-bg: #333;
+$color-text-light: #fff;
+$color-button-bg: #2ecc71;
+$color-button-hover: #27ae60;
+$color-body-bg: #f0f0f0;
+$color-border: #ddd;
+
+// 字體變數定義
+$font-family-primary: Arial, sans-serif;
+
+// 間距和尺寸變數定義
+$padding-standard: 20px;
+$padding-large-card: 30px;
+$margin-standard: 10px;
+$margin-large-card: 20px;
+$button-padding: 10px 20px;
+$border-radius: 5px;
+$card-width: 400px;
+
+// 基本樣式
+body {
+    font-family: $font-family-primary;
+    background-color: $color-body-bg;
+    margin: 0;
+    padding: 0;
+}
+
+// header 和 .header 的合併和優化
+header, .header {
+    background-color: $color-primary;
+    color: $color-text-light;
+    padding: $padding-standard;
+
+    nav {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline;
+                margin-right: $margin-standard;
+
+                a {
+                    color: $color-text-light;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// _footer.scss 部分內容
+.footer {
+    background-color: $color-footer-bg;
+    color: $color-text-light;
+    padding: $padding-standard;
+}
+
+// 在 main.scss 中進行導入（Import）操作
+@import 'base';
+
+// 混合（Mixin）定義並使用
+@mixin button-style($bg-color, $hover-color) {
+    background-color: $bg-color;
+    color: $color-text-light;
+    padding: $button-padding;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+}
+
+.button {
+    @include button-style($color-button-bg, $color-button-hover);
+}
+
+// 繼承（Inheritance/Extend）和運算（Operators）使用
+.card {
+    width: $card-width;
+    padding: $padding-standard;
+    border: 1px solid $color-border;
+    margin: $margin-standard 0;
+}
+
+.large-card {
+    @extend .card;
+    padding: $padding-large-card;
+    margin: $margin-large-card 0;
+}
+
+
+
+
+
+
+
+// ****************** //
+//
+// ****************** //
+
+
+
+// // 1.變數定義
+// $primary-color: #3498db;
+// $footer-bg-color: #333;
+// $text-color-light: #fff;
+// $padding: 20px;
+
+// .header {
+//     background-color: $primary-color;
+//     color: $text-color-light;
+//     padding: $padding;
+// }
+
+// .footer {
+//     background-color: $footer-bg-color;
+//     color: $text-color-light;
+//     padding: $padding;
+// }
+
+
+// // 2.
+// header {
+//     background-color: #3498db;
+//     padding: 20px;
+
+//     nav {
+//         ul {
+//             list-style: none;
+//             margin: 0;
+//             padding: 0;
+
+//             li {
+//                 display: inline;
+//                 margin-right: 10px;
+
+//                 a {
+//                     color: white;
+//                     text-decoration: none;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// // 3.
+// // _base.scss
+// body {
+//     font-family: Arial, sans-serif;
+//     margin: 0;
+//     padding: 0;
+// }
+
+
+
+// // _header.scss
+// .header {
+//     background-color: #3498db;
+//     color: #fff;
+//     padding: 20px;
+// }
+
+
+
+// // _footer.scss
+// .footer {
+//     background-color: #333;
+//     color: #fff;
+//     padding: 20px;
+// }
+
+
+
+// // main.scss
+// // 導入部分文件
+// @import 'base';
+// @import 'header';
+// @import 'footer';
+
+
+
+// // 4.
+// // 混合定義
+// @mixin button-style($bg-color, $hover-color) {
+//     background-color: $bg-color;
+//     color: white;
+//     padding: 10px 20px;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+
+//     &:hover {
+//         background-color: $hover-color;
+//     }
+// }
+
+// .button {
+//     @include button-style(#2ecc71, #27ae60);
+// }
+
+
+
+// // 5.
+// .card {
+//     width: 400px;
+//     padding: 20px;
+//     border: 1px solid #ddd;
+//     margin: 10px 0;
+// }
+
+// .large-card {
+//     @extend .card;
+//     padding: 20px + 10px;
+//     margin: 10px \* 2 0;
+// }
+
+
+
+
+
+

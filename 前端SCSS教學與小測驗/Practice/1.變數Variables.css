@@ -1,0 +1,14 @@
+/* 說明：將顏色和字體大小定義為變數，並在樣式中使用這些變數。 */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h1 {
+    color: #3498db;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+}

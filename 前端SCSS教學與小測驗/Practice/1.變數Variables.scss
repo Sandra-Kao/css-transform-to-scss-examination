@@ -1,0 +1,19 @@
+// 定義變數
+$primary-color: #3498db;
+$secondary-color: #666;
+$text-color: #333;
+$base-font-size: 16px;
+
+body {
+    font-family: Arial, sans-serif;
+    color: $text-color;
+}
+
+h1 {
+    color: $primary-color;
+}
+
+p {
+    color: $secondary-color;
+    font-size: $base-font-size;
+}

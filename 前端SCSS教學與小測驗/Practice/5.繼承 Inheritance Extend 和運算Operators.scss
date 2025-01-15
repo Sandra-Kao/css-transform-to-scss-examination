@@ -1,0 +1,11 @@
+.box {
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 10px;
+}
+
+.large-box {
+    @extend .box;
+    padding: 20px + 10px;
+    margin: 10px \* 2;
+}

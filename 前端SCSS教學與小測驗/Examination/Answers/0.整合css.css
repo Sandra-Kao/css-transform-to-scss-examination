@@ -1,0 +1,86 @@
+
+/* 說明：定義變數，並在樣式中使用這些變數。 */
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* 說明：使用嵌套規則將 CSS 結構優化。 */
+header {
+    background-color: #3498db;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 說明：將 CSS 拆分為部分文件，並在主 SCSS 文件中導入這些部分文件。 */
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* 說明：將按鈕樣式定義為混和，並重用。 */
+.button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #27ae60;
+}
+
+
+/* 說明：使用繼承來重用樣式，並使用運算調整間距。 */
+.card {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.large-card {
+    width: 400px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}

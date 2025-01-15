@@ -1,0 +1,13 @@
+/* 說明：將按鈕樣式定義為混和，並重用。 */
+.button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #27ae60;
+}
